@@ -1,0 +1,123 @@
+{
+  "best": {
+    "actions": 197552,
+    "efficiency": 0.54,
+    "first_error": null,
+    "hands": 10049,
+    "hands_per_s": 1253.9,
+    "measured_seconds": 8.014,
+    "speedup_vs_1": 7.53,
+    "violations": 0,
+    "wall_seconds_incl_startup": 8.64,
+    "workers": 14
+  },
+  "format": {
+    "blinds": [
+      50,
+      100
+    ],
+    "players": 6,
+    "reset_stacks": true,
+    "stack": 10000
+  },
+  "gates": [
+    {
+      "detail": "best 1253.9 hands/s at 14 workers (need >= 167); violations=0; reproducible=True",
+      "id": "G0.1",
+      "passed": true
+    }
+  ],
+  "levels": [
+    {
+      "actions": 26129,
+      "efficiency": 1.0,
+      "first_error": null,
+      "hands": 1332,
+      "hands_per_s": 166.5,
+      "measured_seconds": 8.001,
+      "speedup_vs_1": 1.0,
+      "violations": 0,
+      "wall_seconds_incl_startup": 8.29,
+      "workers": 1
+    },
+    {
+      "actions": 51124,
+      "efficiency": 0.98,
+      "first_error": null,
+      "hands": 2625,
+      "hands_per_s": 327.9,
+      "measured_seconds": 8.005,
+      "speedup_vs_1": 1.97,
+      "violations": 0,
+      "wall_seconds_incl_startup": 8.27,
+      "workers": 2
+    },
+    {
+      "actions": 102249,
+      "efficiency": 0.98,
+      "first_error": null,
+      "hands": 5233,
+      "hands_per_s": 653.6,
+      "measured_seconds": 8.007,
+      "speedup_vs_1": 3.93,
+      "violations": 0,
+      "wall_seconds_incl_startup": 8.29,
+      "workers": 4
+    },
+    {
+      "actions": 181061,
+      "efficiency": 0.87,
+      "first_error": null,
+      "hands": 9247,
+      "hands_per_s": 1154.7,
+      "measured_seconds": 8.008,
+      "speedup_vs_1": 6.94,
+      "violations": 0,
+      "wall_seconds_incl_startup": 8.34,
+      "workers": 8
+    },
+    {
+      "actions": 197552,
+      "efficiency": 0.54,
+      "first_error": null,
+      "hands": 10049,
+      "hands_per_s": 1253.9,
+      "measured_seconds": 8.014,
+      "speedup_vs_1": 7.53,
+      "violations": 0,
+      "wall_seconds_incl_startup": 8.64,
+      "workers": 14
+    },
+    {
+      "actions": 197133,
+      "efficiency": 0.47,
+      "first_error": null,
+      "hands": 10021,
+      "hands_per_s": 1250.9,
+      "measured_seconds": 8.011,
+      "speedup_vs_1": 7.51,
+      "violations": 0,
+      "wall_seconds_incl_startup": 8.64,
+      "workers": 16
+    }
+  ],
+  "note": "random-policy hands; real agents add decision time on top",
+  "projected_minutes_100k_hands": 1.3,
+  "projected_minutes_1M_hands": 13.3,
+  "reproducibility": {
+    "different_seed_differs": true,
+    "hands": 200,
+    "same_seed_identical": true
+  },
+  "spike": "spike_a_engine",
+  "system": {
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "logical_cpus": 16,
+    "machine": "x86_64",
+    "mem_total_gib": 30.65,
+    "physical_cores": 8,
+    "platform": "Linux-6.18.1-061801-generic-x86_64-with-glibc2.39",
+    "python": "3.11.4"
+  },
+  "timestamp": "2026-10-30T22:35:19+00:00"
+}

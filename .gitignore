@@ -1,0 +1,15 @@
+.venv/
+.venv-gpu/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.hypothesis/
+work/
+vendor/
+models/
+results/phase0/*.csv
+*.bin
+*.ckpt
+*.zip

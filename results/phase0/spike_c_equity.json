@@ -1,0 +1,71 @@
+{
+  "agreement": {
+    "mismatches": {
+      "eval7": 0,
+      "phevaluator": 0,
+      "treys": 0
+    },
+    "pairs": 1500,
+    "reference": "pokerkit"
+  },
+  "assumption_evals_per_l4_decision": 10000,
+  "best_evaluator": "eval7",
+  "evaluators": {
+    "eval7": {
+      "aa_equity_vs_random": 0.857,
+      "est_l4_decision_ms": 4.6,
+      "evals_per_s": 2150653,
+      "mc_samples": 3000,
+      "mc_seconds": 0.013
+    },
+    "phevaluator": {
+      "aa_equity_vs_random": 0.857,
+      "est_l4_decision_ms": 32.0,
+      "evals_per_s": 312058,
+      "mc_samples": 3000,
+      "mc_seconds": 0.029
+    },
+    "pokerkit": {
+      "aa_equity_vs_random": 0.857,
+      "est_l4_decision_ms": 2054.8,
+      "evals_per_s": 4867,
+      "mc_samples": 3000,
+      "mc_seconds": 1.286
+    },
+    "treys": {
+      "aa_equity_vs_random": 0.857,
+      "est_l4_decision_ms": 84.2,
+      "evals_per_s": 118769,
+      "mc_samples": 3000,
+      "mc_seconds": 0.06
+    }
+  },
+  "gates": [
+    {
+      "detail": "best evaluator eval7: 2,150,653 evals/s, est L4 decision 4.6 ms (budget 50.0 ms). Python-level evaluation is enough for now.",
+      "id": "G3.1-early",
+      "passed": true
+    },
+    {
+      "detail": "AA equity in 0.80-0.90 for all: True; evaluators agree: True",
+      "id": "C-sanity",
+      "passed": true
+    }
+  ],
+  "sanity": {
+    "aa_equity_in_range": true,
+    "evaluators_agree": true
+  },
+  "skipped": {},
+  "spike": "spike_c_equity",
+  "system": {
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "logical_cpus": 16,
+    "machine": "x86_64",
+    "mem_total_gib": 30.65,
+    "physical_cores": 8,
+    "platform": "Linux-6.18.1-061801-generic-x86_64-with-glibc2.39",
+    "python": "3.11.4"
+  },
+  "timestamp": "2026-10-30T22:35:29+00:00"
+}

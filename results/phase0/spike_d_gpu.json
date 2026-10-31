@@ -1,0 +1,36 @@
+{
+  "gates": [
+    {
+      "detail": "torch not importable (No module named 'torch'). Create the GPU venv and install the ROCm build of PyTorch; see docs/phase0/README.md",
+      "id": "G0.3",
+      "passed": null
+    }
+  ],
+  "spike": "spike_d_gpu",
+  "status": "skipped",
+  "system": {
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "logical_cpus": 16,
+    "machine": "x86_64",
+    "mem_total_gib": 30.65,
+    "physical_cores": 8,
+    "platform": "Linux-6.18.1-061801-generic-x86_64-with-glibc2.39",
+    "python": "3.11.4"
+  },
+  "system_view": {
+    "dev_kfd_exists": true,
+    "hip_visible_devices": null,
+    "in_render_group": true,
+    "in_video_group": true,
+    "render_nodes": [
+      "renderD128"
+    ],
+    "rocm-smi_path": "/usr/bin/rocm-smi",
+    "rocm_gfx_agents": [
+      "gfx1200"
+    ],
+    "rocminfo_path": "/usr/bin/rocminfo",
+    "rocr_visible_devices": null
+  },
+  "timestamp": "2026-10-30T22:35:29+00:00"
+}

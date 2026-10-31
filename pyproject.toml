@@ -1,0 +1,54 @@
+[project]
+name = "aipoker"
+version = "0.0.1"
+description = "Six-max NLHE AI arena and staged poker game (Phase 0 feasibility spikes)"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "pokerkit==0.7.7",
+    "numpy>=2.0,<3",
+]
+
+[project.optional-dependencies]
+# Spike C: evaluator candidates (all optional; the benchmark skips any that fail to import)
+bench = [
+    "eval7",
+    "phevaluator",
+    "treys",
+]
+# Spike F: local decision-model experiments. Loopback servers only, no paid APIs.
+# jevper is a young single-maintainer package: keep it pinned.
+llm = [
+    "jevper==0.7.12",
+    "openai>=1.50",
+]
+dev = [
+    "pytest>=8,<10",
+    "hypothesis>=6.100,<7",
+    "ruff>=0.9",
+    "mypy>=1.14,<2",
+]
+# torch is deliberately NOT listed: install the ROCm build in its own venv (see docs/phase0/README.md)
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aipoker"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "scripts/phase0"]
+filterwarnings = ["error::UserWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Spike scripts are long-form, runnable documents: allow long lines and mixed import order.
+"scripts/**" = ["E501", "E402", "I001"]
+"tests/**" = ["E501", "I001"]

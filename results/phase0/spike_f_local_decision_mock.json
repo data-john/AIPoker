@@ -1,0 +1,78 @@
+{
+  "answered": 845,
+  "backend": "mock",
+  "failures": 0,
+  "first_error": null,
+  "gates": [
+    {
+      "detail": "mock: valid 100.0%, agreement 98.2% (combo-weighted 98.6%), Spearman 1.00, widens toward button: True, p50 latency 0.0 ms. Verdict: MOCK.",
+      "id": "F",
+      "passed": null
+    }
+  ],
+  "is_mock": true,
+  "metrics": {
+    "agreement": 0.9822,
+    "agreement_combo_weighted": 0.9864,
+    "by_position": {
+      "BTN": {
+        "agreement": 0.976,
+        "mean_p_raise_combo_weighted": 0.427,
+        "n": 169,
+        "target_width": 0.43
+      },
+      "CO": {
+        "agreement": 0.994,
+        "mean_p_raise_combo_weighted": 0.264,
+        "n": 169,
+        "target_width": 0.27
+      },
+      "HJ": {
+        "agreement": 0.982,
+        "mean_p_raise_combo_weighted": 0.191,
+        "n": 169,
+        "target_width": 0.19
+      },
+      "SB": {
+        "agreement": 0.982,
+        "mean_p_raise_combo_weighted": 0.398,
+        "n": 169,
+        "target_width": 0.4
+      },
+      "UTG": {
+        "agreement": 0.976,
+        "mean_p_raise_combo_weighted": 0.153,
+        "n": 169,
+        "target_width": 0.15
+      }
+    },
+    "latency": {
+      "calls_timed": 845,
+      "mean_ms": 0.0,
+      "p50_ms": 0.0,
+      "p95_ms": 0.0
+    },
+    "position_widening": true,
+    "spearman_mean": 0.998,
+    "valid_rate": 1.0
+  },
+  "reference_note": "Chen-formula ranking with typical RFI widths; not GTO",
+  "spike": "spike_f_local_decision_mock",
+  "spots": 845,
+  "system": {
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "logical_cpus": 16,
+    "machine": "x86_64",
+    "mem_total_gib": 30.65,
+    "physical_cores": 8,
+    "platform": "Linux-6.18.1-061801-generic-x86_64-with-glibc2.39",
+    "python": "3.11.4"
+  },
+  "thresholds": {
+    "agreement": 0.75,
+    "spearman": 0.6,
+    "valid_rate": 0.99
+  },
+  "timestamp": "2026-10-30T22:35:29+00:00",
+  "verdict": "MOCK"
+}

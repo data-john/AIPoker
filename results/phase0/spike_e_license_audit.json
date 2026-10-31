@@ -1,0 +1,147 @@
+{
+  "gates": [
+    {
+      "detail": "no copyleft or unknown licences among installed dependencies",
+      "id": "E-auto",
+      "passed": true
+    },
+    {
+      "detail": "6 manual licence tasks open (see report)",
+      "id": "E-manual",
+      "passed": null
+    }
+  ],
+  "manual_items": [
+    {
+      "id": "noregrets-terms",
+      "status": "TODO",
+      "task": "Request NoRegrets commercial terms in writing (docs/phase0/noregrets_licence_email.md)"
+    },
+    {
+      "id": "noregrets-own-blueprint",
+      "status": "TODO",
+      "task": "Confirm in writing that a blueprint you train from the MIT source may be shipped"
+    },
+    {
+      "id": "model-weights",
+      "status": "TODO",
+      "task": "Record the licence of every decision-model weight you intend to ship (kev, Ollaya, CLM, any GGUF)"
+    },
+    {
+      "id": "kev-licence",
+      "status": "TODO",
+      "task": "kev (jaredpalmer/kev): licence not verified"
+    },
+    {
+      "id": "ollaya-licence",
+      "status": "TODO",
+      "task": "Ollaya (ollaya-dev/ollaya) and its laya models: licence not verified"
+    },
+    {
+      "id": "clm-licence",
+      "status": "TODO",
+      "task": "CLM (Contrastive-LM/CLM) and its heads: licence not verified"
+    }
+  ],
+  "note": "Package metadata is self-declared: confirm against the actual LICENSE file before shipping",
+  "packages": [
+    {
+      "group": "core",
+      "installed": true,
+      "license": "MIT",
+      "needs_review": false,
+      "package": "pokerkit",
+      "version": "0.7.7"
+    },
+    {
+      "group": "core",
+      "installed": true,
+      "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "needs_review": false,
+      "package": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "group": "bench",
+      "installed": true,
+      "license": "MIT",
+      "needs_review": false,
+      "package": "eval7",
+      "version": "0.1.11"
+    },
+    {
+      "group": "bench",
+      "installed": true,
+      "license": "Apache License",
+      "needs_review": false,
+      "package": "phevaluator",
+      "version": "0.6.0"
+    },
+    {
+      "group": "bench",
+      "installed": true,
+      "license": "MIT",
+      "needs_review": false,
+      "package": "treys",
+      "version": "0.1.8"
+    },
+    {
+      "group": "llm",
+      "installed": true,
+      "license": "Apache-2.0",
+      "needs_review": false,
+      "package": "jevper",
+      "version": "0.7.12"
+    },
+    {
+      "group": "llm",
+      "installed": true,
+      "license": "Apache-2.0",
+      "needs_review": false,
+      "package": "openai",
+      "version": "3.41.0"
+    },
+    {
+      "group": "dev",
+      "installed": true,
+      "license": "MIT",
+      "needs_review": false,
+      "package": "pytest",
+      "version": "9.2.0"
+    },
+    {
+      "group": "dev",
+      "installed": true,
+      "license": "MPL-2.0",
+      "needs_review": false,
+      "package": "hypothesis",
+      "version": "6.170.14"
+    },
+    {
+      "group": "dev",
+      "installed": true,
+      "license": "MIT",
+      "needs_review": false,
+      "package": "ruff",
+      "version": "0.17.3"
+    }
+  ],
+  "spike": "spike_e_license_audit",
+  "system": {
+    "cpu_model": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "logical_cpus": 16,
+    "machine": "x86_64",
+    "mem_total_gib": 30.65,
+    "physical_cores": 8,
+    "platform": "Linux-6.18.1-061801-generic-x86_64-with-glibc2.39",
+    "python": "3.11.4"
+  },
+  "timestamp": "2026-10-30T22:35:29+00:00",
+  "vendored": {
+    "LICENSE": {
+      "first_line": "MIT License",
+      "looks_like_mit": true,
+      "sha256": "d14f8cfebaacaba7c93bd90c42b8a239f29e9f3562398bce5596a0eee01a2985"
+    }
+  }
+}
